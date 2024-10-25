@@ -8,6 +8,7 @@ services:
     restart: unless-stopped
     depends_on:
       - postgres
+    # http://localhost:7002/default/routes
     ports:
       - "7000:8000"    # Proxy
       - "7443:8443"    # Proxy (SSL)
